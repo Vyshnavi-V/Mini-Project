@@ -1,1 +1,1 @@
-# Intelligent_Hospital_Management_System
+# Intelligent Hospital Management System
