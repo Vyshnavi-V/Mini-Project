@@ -799,6 +799,16 @@ button[type="submit"] {
 button[type="submit"]:hover {
 	background-color: #3e8e41;
 }
+/*Register css*/
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+  }
+  .card-registration .select-arrow {
+  top: 13px;
+  }
 
 /*Sign in css*/
 .divider:after,
