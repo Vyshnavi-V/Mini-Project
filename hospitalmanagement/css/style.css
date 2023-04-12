@@ -654,17 +654,9 @@ a:focus {
   padding: 0;
 }
 
-.contact_section .map_container .map {
-  height: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+#hospimage{
+  height: 390px;
 }
-
-.contact_section .map_container .map #googleMap {
-  height: 100%;
-}
-
 .client_section .heading_container {
   -webkit-box-align: center;
       -ms-flex-align: center;
