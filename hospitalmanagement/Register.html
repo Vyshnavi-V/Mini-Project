@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hospital Management Registration</title>
+	<link rel="stylesheet" type="text/css" href="registration.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Hospital Management Registration</h1>
+		<form>
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="fname" required>
+
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lname" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+
+			<label for="confirm-password">Confirm Password:</label>
+			<input type="password" id="confirm-password" name="confirm-password" required>
+
+			<label for="role">Role:</label>
+			<select id="role" name="role" required>
+				<option value="">Select Role</option>
+				<option value="doctor">Doctor</option>
+				<option value="nurse">Nurse</option>
+				<option value="admin">Admin</option>
+			</select>
+
+			<input type="submit" value="Register">
+		</form>
+	</div>
+</body>
+</html>
