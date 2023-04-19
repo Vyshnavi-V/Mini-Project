@@ -803,15 +803,36 @@ button[type="submit"]:hover {
 	background-color: #3e8e41;
 }
 /*Register css*/
-.card-registration .select-input.form-control[readonly]:not([disabled]) {
-  font-size: 1rem;
-  line-height: 2.15;
-  padding-left: .75em;
-  padding-right: .75em;
-  }
-  .card-registration .select-arrow {
-  top: 13px;
-  }
+/* Set styles for the form container */
+.register-section {
+  margin-top: 50px;
+}
+
+/* Set styles for the form header */
+.card-header {
+  background-color: black;
+  color: #fff;
+}
+
+/* Set styles for the form fields */
+.form-control {
+  border-radius: 0;
+}
+
+/* Set styles for the submit button */
+.btn-primary {
+  border-radius: 0;
+}
+
+/* Set styles for the card footer */
+.card-footer {
+  background-color: #f0f0f0;
+}
+
+/* Set styles for error messages */
+.has-error .help-block {
+  color: #a94442;
+}
 
 /*Sign in css*/
 .divider:after,
@@ -1060,6 +1081,38 @@ select, input[type="date"], input[type="time"], textarea {
 	cursor: default;
 }
 
+/*popup css*/
+/* Style for modal */
+.modal-body {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+/* Style for form elements */
+.form-control:focus {
+  border-color: #0099ff;
+  box-shadow: none;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group select,
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group textarea {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.form-group select:focus,
+.form-group input[type="date"]:focus,
+.form-group input[type="time"]:focus,
+.form-group textarea:focus {
+  border-color: #0099ff;
+  box-shadow: none;
+}
 
 .footer_section {
   background: #178066;
