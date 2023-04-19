@@ -921,7 +921,63 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	background-color: #444;
 }
+/*prescription css*/
+* {
+	box-sizing: border-box;
+}
 
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.medical_history_section {
+	width: 80%;
+	margin: 50px auto 0;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px #ccc;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+thead th {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: left;
+}
+
+tbody td {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+tfoot td {
+	border-top: 1px solid #ccc;
+	padding: 10px;
+	text-align: right;
+}
+
+tfoot td:first-child {
+	text-align: left;
+}
+
+tfoot td:last-child {
+	font-weight: bold;
+}
+
+tfoot tr:last-child td:last-child {
+	color: #f00;
+}
 
 
 .footer_section {
