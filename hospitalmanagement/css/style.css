@@ -1113,6 +1113,27 @@ select, input[type="date"], input[type="time"], textarea {
   border-color: #0099ff;
   box-shadow: none;
 }
+/* bookingsuccesspopup css */
+
+  #booking-success-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+  #booking-success-popup h3 {
+    margin-top: 0;
+  }
+
+  #booking-success-popup p {
+    margin-bottom: 0;
+  }
 
 .footer_section {
   background: #178066;

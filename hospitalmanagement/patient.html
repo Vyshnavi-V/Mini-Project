@@ -177,10 +177,12 @@
           </div>
         </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Book Appointment</button>
-      </div>
+      <button type="button" class="btn btn-primary" id="book-appointment-btn">Book Appointment</button>
+      <!-- <div id="booking-success-popup" style="display: none;">
+        <h3>Booking Successful!</h3>
+        <p>Thank you for booking your appointment. We look forward to seeing you soon.</p>
+      </div>-->
+    
     </div>
   </div>
 </div>
@@ -381,5 +383,15 @@
     </div>
   </footer>
   <!-- footer section -->
+  
+  <script>
+    var bookAppointmentBtn = document.getElementById("book-appointment-btn");
+    var bookingSuccessPopup = document.getElementById("booking-success-popup");
+  
+    bookAppointmentBtn.addEventListener("click", function() {
+      bookingSuccessPopup.style.display = "block";
+    });
+  </script>
+  
   </body>
   </html>
