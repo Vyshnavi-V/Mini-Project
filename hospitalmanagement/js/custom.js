@@ -44,3 +44,25 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+/**booking **/
+$(document).ready(function() {
+	// Get the bookings data from the local storage
+	var bookings = JSON.parse(localStorage.getItem('bookings'));
+	if(bookings != null) {
+		// Loop through each booking and add it to the table
+		for(var i=0; i<bookings.length; i++) {
+			var booking = bookings[i];
+			var statusClass = booking.status == 'Confirmed' ? 'table-success' : 'table-warning';
+			var token = booking.token == '' ? '-' : booking.token;
+			var row = '<tr class="' + statusClass + '">';
+			row += '<td>' + booking.id + '</td>';
+			row += '<td>' + booking.doctor + '</td>';
+			row += '<td>' + booking.date + '</td>';
+			row += '<td>' + booking.time + '</td>';
+			row += '<td>' + booking.status + '</td>';
+			row += '<td>' + token + '</td>';
+			row += '</tr>';
+			$('#booking-list').append(row);
+		}
+	}
+});

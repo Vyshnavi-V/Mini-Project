@@ -44,6 +44,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
+
   
 
 </head>
@@ -181,16 +182,11 @@
           </div>
         </form>
       </div>
-      <a href="payment.html">
-      <button type="button" class="btn btn-primary" id="book-appointment-btn">Book Appointment</button>
-    </a>
-     
+      <a href="patient.html" data-toggle="modal" data-target="#exampleModal">
+        <button type="button" class="btn btn-primary" id="book-appointment-btn">Book Appointment</button>
+      </a>
 
-      <!-- <div id="booking-success-popup" style="display: none;">
-        <h3>Booking Successful!</h3>
-        <p>Thank you for booking your appointment. We look forward to seeing you soon.</p>
-      </div>-->
-    
+      
     </div>
   </div>
 </div>
@@ -204,14 +200,10 @@
                
               <ul class="list-group list-group-flush rounded-3">
                 <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                  
                   <a class="nav-link" href="bookings.html" style="color: black !important;">Bookings</a>
-
-                    <p class="mb-0"></p>
-                    
+                  <span class="badge badge-primary badge-pill" id="booking-notification"></span>
                 </li>
-            
-            
+                
                 <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                   
                   <a class="nav-link" href="prescription.html" style="color: black !important;">Medical History</a>
@@ -228,7 +220,7 @@
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                   
-                  <a class="nav-link" href="account.html" style="color: black !important;">Account</a>
+                  <a class="nav-link" href="updateprofile.html" style="color: black !important;">Account</a>
 
                     <p class="mb-0"></p>
                     
@@ -392,14 +384,7 @@
   </footer>
   <!-- footer section -->
   
-  <script>
-    var bookAppointmentBtn = document.getElementById("book-appointment-btn");
-    var bookingSuccessPopup = document.getElementById("booking-success-popup");
   
-    bookAppointmentBtn.addEventListener("click", function() {
-      bookingSuccessPopup.style.display = "block";
-    });
-  </script>
   <script>
     function filterDoctors() {
       var selectedDepartment = document.getElementById("department").value;
@@ -413,6 +398,9 @@
         }
       }
     }
+    
     </script>
+    
+    
   </body>
   </html>
