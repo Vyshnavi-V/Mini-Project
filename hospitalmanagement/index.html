@@ -35,9 +35,7 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
   
-
   
-
 </head>
 
 <body>
@@ -660,6 +658,18 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+
+  <script>
+    document.getElementById("submitPatientTypeBtn").addEventListener("click", function() {
+      var patientType = document.querySelector('input[name="patientTypeRadio"]:checked').value;
+      if (patientType === "existing") {
+        window.location.href = "existing-patient.html";
+      } else if (patientType === "new") {
+        window.location.href = "new-patient.html";
+      }
+    });
+  </script>
+  
 
 </body>
 
