@@ -1212,7 +1212,7 @@ select, input[type="date"], input[type="time"], textarea {
 
 }
 
-/* newpatient css */
+/* existingpatient css */
 .bg-container {
   background-color: #f2f2f2;
   padding: 20px;
@@ -1262,7 +1262,195 @@ button[type="submit"]:hover {
   background-color: #3b8f68;
 }
 
+/* newpatient css */
+.newpatientcontainer {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 30px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
 
+/* Style the form */
+form {
+  margin-top: 20px;
+}
+
+/* Style the headings */
+h1, h2 {
+  text-align: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+/* Style the form inputs */
+.form-control {
+  font-size: 14px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Style the form labels */
+label {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Style the submit button */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+/* Style the select dropdowns */
+select {
+  font-size: 14px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Style the form rows */
+.form-row {
+  margin-bottom: 20px;
+}
+
+/* Style the error message */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+/* Set font style for the whole form */
+.newpatientcontainer form {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Style the headings */
+.newpatientcontainer h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+/* Style the labels */
+.newpatientcontainer label {
+  font-weight: bold;
+}
+
+/* Add some padding to the form groups */
+.newpatientcontainer .form-group {
+  padding-bottom: 20px;
+}
+
+/* Style the input fields */
+.newpatientcontainer input {
+  border-radius: 0;
+  border: 1px solid #ccc;
+  box-shadow: none;
+}
+
+/* Add some spacing between form elements */
+.newpatientcontainer .form-row {
+  margin-bottom: 20px;
+}
+
+/* Style the select fields */
+.newpatientcontainer select {
+  border-radius: 0;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  height: 36px;
+  padding: 6px 12px;
+  width: 100%;
+}
+
+/* Style the submit button */
+.newpatientcontainer button[type="submit"] {
+  background-color: #1a75ff;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 24px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.newpatientcontainer button[type="submit"]:hover {
+  background-color: #0047b3;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: auto;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.newpatientcontainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+.form-control {
+  border-radius: 0;
+}
+
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 15px;
+  }
+}
 
 
 .footer_section {

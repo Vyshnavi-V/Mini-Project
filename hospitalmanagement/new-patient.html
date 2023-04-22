@@ -90,13 +90,139 @@
     <!-- end header section -->
   </div>
  <!--end of header -->
+ <br><br><br><br>
+ 
+   <div class="newpatientcontainer">
+     <h1>Book Online</h1>
+     <form>
+       <div class="form-row">
+         <div class="form-group col-md-6 ">
+           <label for="firstName" >First Name</label>
+           <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" style="font-size: 11px;">
+         </div>
+         <div class="form-group col-md-6">
+           <label for="lastName">Last Name</label>
+           <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" style="font-size: 11px;">
+         </div>
+       </div>
+       <div class="form-row">
+         <div class="form-group col-md-6">
+           <label for="email">Email</label>
+           <input type="email" class="form-control" id="email" placeholder="Enter Email" style="font-size: 11px;">
+         </div>
+         <div class="form-group col-md-6">
+           <label for="address">Address</label>
+           <input type="text" class="form-control" id="address" placeholder="Enter Address" style="font-size: 11px;">
 
-
-
-
-
-
+         </div>
+       </div>
+       <div class="form-row">
+         <div class="form-group col-md-6">
+           <label for="state">State</label>
+           <input type="text" class="form-control" id="state" placeholder="Enter State" style="font-size: 11px;">
+         </div>
+         <div class="form-group col-md-6">
+           <label for="city">City</label>
+           <input type="text" class="form-control" id="city" placeholder="Enter City" style="font-size: 11px;">
+         </div>
+       </div>
+       <div class="form-row">
+         <div class="form-group col-md-6">
+           <label for="contactNumber">Contact Number</label>
+           <input type="text" class="form-control" id="contactNumber" placeholder="Enter Contact Number" style="font-size: 11px;">
+         </div>
+         
+          <div class="form-group col-md-6">
+            <label for="contactNumber">Emergency Number</label>
+            <input type="text" class="form-control" id="contactNumber" placeholder="Enter Contact Number" style="font-size: 11px;">
+          </div>
+          </div>
+          <div class="form-row">
+         <div class="form-group col-md-6">
+          <label for="department">Department</label>
+          <select id="department" class="form-control" onchange="showDoctors()">
+            <option value="" selected>Select Department</option>
+            <option value="department1">Cardiology</option>
+            <option value="department2">Neurology</option>
+            <option value="department3">Orthopedics
+            </option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="doctor">Doctor</label>
+          <select id="doctor" class="form-control">
+            <option value="" selected>Select Doctor</option>
+          </select>
+        </div>
+       </div>
+       <div class="form-row">
+         <div class="form-group col-md-6">
+           <label for="date">Date</label>
+           <input type="date" class="form-control" id="date">
+         </div>
+       
+         <div class="form-group col-md-6">
+           <label for="time">Time</label>
+           <input type="time" class="form-control" id="time">
+         </div>
+         </div>
+         
+        
+       
+        <button type="submit" class="btn btn-primary">Book Now</button>
+      </form>
+    </div>
     
+    <script>
+      function showDoctors() {
+        var department = document.getElementById("department").value;
+        var doctorSelect = document.getElementById("doctor");
+        doctorSelect.innerHTML = "";
+        
+        if (department === "department1") {
+          var doctor1 = document.createElement("option");
+          doctor1.text = "Select Doctor";
+          doctorSelect.add(doctor1);
+          
+
+          var doctor2 = document.createElement("option");
+          doctor2.text = "Dr. Jane Smith";
+          doctorSelect.add(doctor2);
+          
+          var doctor3 = document.createElement("option");
+          doctor3.text = "Dr. Sarah Johnson";
+          doctorSelect.add(doctor3);
+        } else if (department === "department2") {
+          var doctor5 = document.createElement("option");
+          doctor5.text = "Select Doctor";
+          doctorSelect.add(doctor5);
+          
+          var doctor3 = document.createElement("option");
+          doctor3.text = "Dr. David Lee";
+          doctorSelect.add(doctor3);
+          
+          var doctor4 = document.createElement("option");
+          doctor4.text = "Dr. Maria Rodriguez";
+          doctorSelect.add(doctor4);
+        } else if (department === "department3") {
+          var doctor8 = document.createElement("option");
+          doctor8.text = "Select Doctor";
+          doctorSelect.add(doctor8);
+          
+
+          var doctor7 = document.createElement("option");
+          doctor7.text = "Dr. Emily Chen";
+          doctorSelect.add(doctor7);
+          
+          var doctor6 = document.createElement("option");
+          doctor6.text = "Dr. Lisa Patel";
+          doctorSelect.add(doctor6);
+        }
+      }
+    </script>
+
+
+<br><br><br><br><br>
       <!-- footer section -->
       <footer class="footer_section">
         <div class="container">
@@ -192,6 +318,8 @@
         </div>
       </footer>
       <!-- footer section -->
+
+    
     
     </body>
     </html>
