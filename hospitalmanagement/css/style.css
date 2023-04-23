@@ -170,6 +170,7 @@ a:focus {
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+
 }
 
 .custom_nav-container .nav_search-btn {
@@ -178,6 +179,8 @@ a:focus {
   padding: 0;
   border: none;
   color: #ffffff;
+  margin-top: -20px !important; /* Adjust this value to move the button up or down */
+  
 }
 
 .custom_nav-container .nav_search-btn:hover {
