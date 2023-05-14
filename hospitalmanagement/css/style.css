@@ -1454,7 +1454,52 @@ textarea.form-control {
     padding: 15px;
   }
 }
+/* otp css */
+.otp-container {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.otp-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.otp-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.otp-container input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  width: 100%;
+  max-width: 300px;
+}
+
+.otp-container button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.otp-container button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
 
 .footer_section {
   background: #178066;
